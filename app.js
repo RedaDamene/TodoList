@@ -39,7 +39,7 @@ function deleteItem(e) {
     // supprimer
     if (item.classList[0] === "trash-btn") {
         item.parentElement.classList.add("fall");
-        item.parentElement.addEventListener("transitionend", function () {
+        item.parentElement.addEventListener("transitionend", () => {
             item.parentElement.remove();
         })
     }
